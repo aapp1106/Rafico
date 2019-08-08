@@ -184,6 +184,36 @@ background-size: cover;
 }
 
 
+@media screen and (min-width: 480px){
+	header #eslo{
+		width:200px !important;
+	}
+
+	#slider #Inicio .mainLogo{
+		width: 270px;
+		left: 50%;
+		margin-left: -135px;
+	}
+	#slider #Inicio .mainLogo{
+		width: 270px;
+		left: 50%;
+		margin-left: -135px;
+	}
+
+	#slider #Biografia,
+	#slider #Firmar,
+	#slider #Galeria
+	{
+		left: 40%;
+		position: absolute;
+	}
+	header nav #card_menu {
+		width: 200px;
+	}
+	.mainLogo {
+		padding-right: 20px;
+	}
+}
 
 footer{
 	width: 100%;
@@ -240,8 +270,6 @@ footer .rrss a img{
 	width: 100%;
 }
 
-
-
 @media screen and (min-width: 600px){
 	
 	header #eslo{
@@ -280,11 +308,14 @@ footer .rrss a img{
 	}
 
 	#slider #Biografia,
-	#slider #Firmar,
-	#slider #Galeria,
 	#slider #HV{
 		left: 20%;
 		position: absolute;
+		
+	}
+	
+	#slider #Firmar,
+	#slider #HV{
 		
 	}
 	header nav #card_menu {
