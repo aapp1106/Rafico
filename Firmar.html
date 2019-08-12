@@ -19,6 +19,7 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/sweetalert.css"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,11 +80,12 @@
 					<div class="col-md-6">
 						<div class="contact-form">
 							<h4>Firma</h4>
-							<form>
-								<input class="input" type="text" name="name" placeholder="Nombre">
-								<input class="input" type="email" name="email" placeholder="Correo">
-								<input class="input" type="text" name="subject" placeholder="Ciudad">
-								<button class="main-button icon-button pull-right">Registrar</button>
+							<form id="form_Registrar">
+								<input class="input" type="text" name="Cedula" id="Cedula" placeholder="Cedula" required>
+								<input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
+								<input class="input" type="email" name="email" id="email" placeholder="Correo" required>
+								<input class="input" type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required>
+								<button class="main-button icon-button pull-right" id="btnGuardarRegistrar">Registrar</button>
 							</form>
 						</div>
 					</div>
@@ -177,6 +179,6 @@
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		<script type="text/javascript" src="js/google-map.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-
+		<script type="text/javascript" src="css/sweetalert.min.js"></script>
 	</body>
 </html>

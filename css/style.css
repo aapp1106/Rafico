@@ -134,9 +134,10 @@ blockquote:before{
 	right:0;
 	top:0;
 	bottom:0;
-	background-position:top;
+	background-position:right;
 	background-size:cover;
 }
+
 
 .titleS{
 	color: #0C8842;
@@ -1253,6 +1254,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 @media only screen and (max-width: 767px) {
+	.bg-image {
+	}
 	/*-- Hero area --*/
 	.hero-area h1 {
 		font-size:30px;
@@ -1270,6 +1273,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 @media only screen and (max-width: 480px) {
+	.bg-image {
+	}
 	/*-- Courses --*/
 	#courses-wrapper [class*='col-xs'] {
 		width:100%;
@@ -1291,6 +1296,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	}
 }
 
+@media screen and (min-width: 950px){
+	
+	
+}
 /*------------------------------------*\
 	Preloader
 \*------------------------------------*/ 
