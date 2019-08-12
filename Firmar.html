@@ -28,6 +28,13 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+
+
+		<!-- jQuery Plugins -->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="css/sweetalert.min.js"></script>
     </head>
 	<body>
 
@@ -83,8 +90,9 @@
 							<form id="form_Registrar">
 								<input class="input" type="text" name="Cedula" id="Cedula" placeholder="Cedula" required>
 								<input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
-								<input class="input" type="email" name="email" id="email" placeholder="Correo" required>
-								<input class="input" type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required>
+								<input class="input" type="text" name="Celular" id="Celular" placeholder="Celular" required>
+								<select class="form-control" id="Ciudad" name="Ciudad"></select>
+								
 								<button class="main-button icon-button pull-right" id="btnGuardarRegistrar">Registrar</button>
 							</form>
 						</div>
@@ -173,12 +181,6 @@
 		<!-- /preloader -->
 
 
-		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-		<script type="text/javascript" src="js/google-map.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="css/sweetalert.min.js"></script>
+		
 	</body>
 </html>
