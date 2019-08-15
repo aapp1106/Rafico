@@ -148,6 +148,15 @@ blockquote:before{
 	line-height: 20px;
 }
 
+#home{
+	background: url('../img/home-background.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 850px;
+}
+
+
 .bg-image.bg-parallax {
 	background-attachment:fixed;
 }
@@ -337,6 +346,15 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		color: #374050 !important;
 		display: inline-block;
 		margin-left: 40px;
+	}
+
+
+	#home{
+		background: url('../img/home-background2.jpg') no-repeat top center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 }
 
