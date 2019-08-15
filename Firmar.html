@@ -89,10 +89,14 @@
 						<div class="contact-form">
 							<h4>Datos</h4>
 							<form id="form_Registrar">
-								<input class="input" type="text" name="Cedula" id="Cedula" placeholder="Cedula" required>
-								<input class="input" type="text" name="name" id="name" placeholder="Nombre" required>
-								<input class="input" type="text" name="Celular" id="Celular" placeholder="Celular" required>
-								<select class="form-control" id="Ciudad" name="Ciudad" aria-placeholder="Ciudad">
+								<label for="">Cedula</label>
+								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Cedula" id="Cedula" required>
+								<label for="">Nombre</label>
+								<input class="input" type="text" name="name" id="name" required>
+								<label onkeypress="return soloNumeros(event)" for="">Celular</label>
+								<input class="input" type="text" name="Celular" id="Celular" required>
+								<label for="">Ciudad</label>
+								<select class="form-control" id="Ciudad" name="Ciudad" >
 
 								</select>
 								
