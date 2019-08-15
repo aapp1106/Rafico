@@ -21,20 +21,34 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<link type="text/css" rel="stylesheet" href="css/sweetalert.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+        <link href="Content/plugins/select2/select2.min.css" rel="stylesheet" />
+
+
+
 
 
 
 		<!-- jQuery Plugins -->
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+        <script src="Scripts/bootstrap.js"></script>
+		
+		
+        <script src="Scripts/plugins/select2/select2.full.min.js"></script>
+		<script src="Scripts/plugins/sweetalert/sweetalert.min.js"></script>
+
+		<script src="Scripts/plugins/validate/jquery.validate.min.js"></script>
+        <script src="Scripts/plugins/validate/messages_es.min.js"></script>
+        <script src="Scripts/app/ValidacionesExtras.js"></script>
+		<script type="text/javascript" src="js/utilidades.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="css/sweetalert.min.js"></script>
+
+		
+
+
+
+
+
     </head>
 	<body>
 
@@ -90,11 +104,11 @@
 							<h4>Datos</h4>
 							<form id="form_Registrar">
 								<label for="">Cedula</label>
-								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Cedula" id="Cedula" required>
+								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Cedula" id="Cedula" >
 								<label for="">Nombre</label>
-								<input class="input" type="text" name="name" id="name" required>
-								<label onkeypress="return soloNumeros(event)" for="">Celular</label>
-								<input class="input" type="text" name="Celular" id="Celular" required>
+								<input class="input" type="text" name="name" id="name" >
+								<label  for="">Celular</label>
+								<input onkeypress="return soloNumeros(event)" class="input" type="text" name="Celular" id="Celular" >
 								<label for="">Ciudad</label>
 								<select class="form-control" id="Ciudad" name="Ciudad" >
 
@@ -183,9 +197,6 @@
 			</footer>
 			<!-- /Footer -->
 
-		<!-- preloader -->
-		<div id='preloader'><div class='preloader'></div></div>
-		<!-- /preloader -->
 
 
 		
