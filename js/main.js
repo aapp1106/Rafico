@@ -58,7 +58,6 @@ function SaveRegistrar() {
 	
 		var form_data = new FormData();
 		var formURL = 'http://167.86.106.173:8989/Registrar/InsertRegistrarPage';
-
 		var Params = { 
 			Cedula: $('#Cedula').val(), 
 			Nombre: $('#name').val(), 
@@ -80,8 +79,6 @@ function SaveRegistrar() {
 			processData: false,
 			success: function (data) {
 				if (!data.IsError) {
-					alert("¡Hecho!");
-					
 					swal.fire({
 						title: "¡Creado!",
 						text: "Se ha creado correctamente.",
@@ -90,27 +87,19 @@ function SaveRegistrar() {
 					.then((willDelete) => {
 						if (willDelete) {
 							location.reload(true);
-
-
 						}
 					});
-
-
-
 				}
 				else {
-					alert("error dentro");
 					swal({
 						title: "¡Atención!",
 						text: data.Msj,
 						confirmButtonColor: "#66BB6A",
 						type: "warning"
-
 					})
 				}
 			},
 			error: function (jqXHR, textStatus, errorThrown) {
-				
 				console.log(errorThrown);
 			}
 		});
@@ -137,14 +126,12 @@ function Get_Ciudades() {
                         if(item.Co_Depar == 20){
 							HtmlMunicipio += "<option value=" + item.Id_Muni + ">" + item.Des_Muni + "</option>";
 						}
-                            
                     })
 					$('#Ciudad').html(HtmlMunicipio);
 					$('#Ciudad').select2();
                 } else {
                     alert(data);
                 }
-
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log(errorThrown);
