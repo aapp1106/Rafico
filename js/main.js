@@ -27,15 +27,15 @@ $(document).ready(function () {
 function SaveRegistrar() {
 	
 	var form_data = new FormData();
-	var formURL = 'http://167.86.106.173:8090/Registrar/InsertRegistrarPage';
+	var formURL = 'http://167.86.106.173:8989/Registrar/InsertRegistrarPage';
 
 	var Params = { 
 		Cedula: $('#Cedula').val(), 
 		Nombre: $('#name').val(), 
 		Celular: $('#Celular').val(), 
-		MunicipioParent: 'BOSCONIA', 
-		Referente : 2025,
-		UserReg : 2025,
+		MunicipioParent: $('#Ciudad').val(), 
+		Referente : 2029,
+		UserReg : 2029,
 	};
 
 	form_data.append('Parametros', JSON.stringify(Params));
@@ -82,7 +82,7 @@ function SaveRegistrar() {
 
 
 function Get_Ciudades() {
-    var formURL = 'http://167.86.106.173:8090/Registrar/GetBarrios';
+    var formURL = 'http://167.86.106.173:8989/ConfiCampana/GetMunicipios';
     $.ajax(
         {
             url: formURL,
@@ -95,10 +95,10 @@ function Get_Ciudades() {
                     var HtmlMunicipio = "";
                     HtmlMunicipio += "<option value=''>Seleccionar</option>";
                     $.each(DataPartido, function (index, item) {
-                        if (item.Municipio == null) {
-                            HtmlMunicipio += "<option value=" + item.Municipio + ">" + "Sin Municipio" + "</option>";
-                        } else
-                            HtmlMunicipio += "<option value=" + item.Municipio + ">" + item.Municipio + "</option>";
+                        if(item.Co_Depar == 20){
+							HtmlMunicipio += "<option value=" + item.Id_Muni + ">" + item.Des_Muni + "</option>";
+						}
+                            
                     })
                     $('#Ciudad').html(HtmlMunicipio);
                 } else {
