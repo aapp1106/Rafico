@@ -104,12 +104,12 @@ function SaveRegistrar() {
 					});
 				}
 				else {
-					swal({
-						title: "¡Atención!",
-						text: data.Msj,
-						confirmButtonColor: "#66BB6A",
-						type: "warning"
-					})
+					Swal.fire(
+						'¡Atención!',
+						data.Msj,
+						'warning'
+					  )
+					
 				}
 			},
 			error: function (jqXHR, textStatus, errorThrown) {
@@ -117,6 +117,12 @@ function SaveRegistrar() {
 			}
 		});
 		
+	}else{
+		Swal.fire(
+			'¡Atención!',
+			'llene todos los campos',
+			'warning'
+		  )
 	}
 }
 
