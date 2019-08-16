@@ -149,7 +149,7 @@ blockquote:before{
 }
 
 #home{
-	background: url('../img/home-background.jpg') no-repeat top center fixed;
+	background: url('../img/home-background.png') no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
