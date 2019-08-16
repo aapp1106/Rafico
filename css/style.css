@@ -148,13 +148,7 @@ blockquote:before{
 	line-height: 20px;
 }
 
-#home{
-	background: url('../img/home-background.png') no-repeat top center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 
 
 .bg-image.bg-parallax {
@@ -357,6 +351,19 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		background-size: cover;
 	}
 }
+
+@media only screen and (min-width: 768px) {
+	#home{
+		background: url('../img/home-background.png') no-repeat top center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: 1000px;
+	}
+
+}
+
+
 
 /* -- Mobile Toggle Btn -- */
 .navbar-toggle {
